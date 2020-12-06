@@ -4,11 +4,14 @@
 /dist
 /tmp
 /out-tsc
+/src/app/**/*.js
+/src/app/**/*.js.map
 # Only exists if Bazel was run
 /bazel-out
 
 # dependencies
 /node_modules
+/bower_components
 
 # profiling files
 chrome-profiler-events*.json
@@ -40,7 +43,13 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+package-lock.json
+
+# e2e
+/e2e/*.js
+/e2e/*.map
 
 # System Files
+.svn/*
 .DS_Store
 Thumbs.db
