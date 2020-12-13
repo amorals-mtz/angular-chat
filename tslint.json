@@ -12,26 +12,52 @@
     },
     "array-type": false,
     "arrow-return-shorthand": true,
+    "comment-format": [
+      true,
+      "check-space",
+      { "ignore-words": ["TODO:", "FIXME:", "HACK"] }
+    ],
     "curly": true,
     "deprecation": {
       "severity": "warning"
     },
     "eofline": true,
+    "file-name-casing": [
+      true,
+      "kebab-case"
+    ],
     "import-blacklist": [
       true,
       "rxjs/Rx"
     ],
     "import-spacing": true,
+    "interface-name":  [
+      true,
+      "never-prefix"
+    ],
     "indent": {
       "options": [
         "spaces"
       ]
     },
     "max-classes-per-file": false,
+    "max-file-line-count": [
+      true,
+      705
+    ],
     "max-line-length": [
       true,
       140
     ],
+    "max-lines-per-function": [
+      "error",
+      {
+        "max": 75,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "member-access": false,
     "member-ordering": [
       true,
       {
@@ -43,6 +69,7 @@
         ]
       }
     ],
+    "no-consecutive-blank-lines": false,
     "no-console": [
       true,
       "debug",
@@ -64,6 +91,7 @@
       true,
       "as-needed"
     ],
+    "object-literal-sort-keys": false,
     "quotemark": [
       true,
       "single"
@@ -82,9 +110,14 @@
         "named": "never"
       }
     },
+    "trailing-comma": false,
     "typedef": [
       true,
-      "call-signature"
+      "call-signature",
+      "parameter",
+      "property-declaration",
+      "member-variable-declaration",
+      "object-destructuring"
     ],
     "typedef-whitespace": {
       "options": [
@@ -108,7 +141,8 @@
       "options": [
         "ban-keywords",
         "check-format",
-        "allow-pascal-case"
+        "allow-leading-underscore",
+        "allow-snake-case"
       ]
     },
     "whitespace": {
@@ -118,7 +152,10 @@
         "check-operator",
         "check-separator",
         "check-type",
-        "check-typecast"
+        "check-typecast",
+        "check-type-operator",
+        "check-preblock",
+        "check-postbrace"
       ]
     },
     "component-class-suffix": true,
