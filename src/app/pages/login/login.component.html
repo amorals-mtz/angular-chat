@@ -1,0 +1,33 @@
+<div class="container d-flex justify-content-center align items center">
+  <div class="form-wrapper text-center">
+
+    <h2 class="text-center">Login</h2>
+    <form [formGroup]="loginForm" novalidate
+          (submit)="submit()">
+          <!-- The `novalidate` attribute in the <form> element prevents the browser
+                           from attempting native HTML validations. -->
+
+      <!-- Email -->
+      <div class="form-group">
+        <input id="email-input" type="email" class="form-control"
+               placeholder="Enter Email"
+               formControlName="email">
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <input id="password-input" type="password" class="form-control"
+               placeholder="Password"
+               formControlName="password">
+      </div>
+
+      <button type="submit" class="btn btn-primary"
+              [disabled]="!loginForm.valid">
+        Submit
+      </button>
+
+    </form>
+    <small><a routerLink="/signup">Need an Account?</a></small>
+
+  </div>
+</div>
