@@ -6,3 +6,8 @@
 
 // Import the common styles for Bootstrap
 @import 'bootstrap-vendor';
+
+
+body {
+  color: $secondary;
+}
