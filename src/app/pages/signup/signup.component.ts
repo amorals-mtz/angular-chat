@@ -2,18 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit {
 
   /** Reference to the form model. */
-  loginForm: FormGroup = new FormGroup({ });
+  signupForm: FormGroup = new FormGroup({ });
 
 
   constructor(private fb: FormBuilder) {
-    this.loginForm = this.setupForm();
+    this.signupForm = this.setupForm();
   }
 
   ngOnInit(): void { }
@@ -22,6 +22,8 @@ export class LoginComponent implements OnInit {
   private setupForm(): FormGroup {
     // Build the Form properties with validators
     const group = this.fb.group({
+      firstName: [null, [Validators.required]],
+      lastName: [null, [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
     });
@@ -30,8 +32,8 @@ export class LoginComponent implements OnInit {
 
   submit(): void {
     // TODO: call the Auth service
-    const { email, password }: any = this.loginForm.value;
-    console.log(`Email: ${email}, Password: ${password}`);
+    const { firstName, lastName, email, password }: any = this.signupForm.value;
+    console.log(`First Name: ${firstName}, Last Name: ${lastName}, Email: ${email}, Password: ${password}`);
   }
 
 }

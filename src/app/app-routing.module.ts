@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/login' },
 
   { path: 'login', component: LoginComponent },
-  { path: 'signup', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
 
   // This is the WILDCARD CATCH-ALL route that is scoped to the entire application.
   // It will catch any request that is not matched by an earlier route definition.

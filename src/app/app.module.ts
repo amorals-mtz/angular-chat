@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 /** Module Components/Directives/Pipes/Services */
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+
 
 @NgModule({
   imports: [
@@ -24,6 +26,7 @@ import { LoginComponent } from './pages/login/login.component';
   declarations: [
     AppComponent,
     LoginComponent,
+    SignupComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
