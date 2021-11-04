@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 /** Module Components/Directives/Pipes/Services */
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 
@@ -25,6 +26,7 @@ import { SignupComponent } from './pages/signup/signup.component';
   ],
   declarations: [
     AppComponent,
+    NavbarComponent,
     LoginComponent,
     SignupComponent,
   ],
