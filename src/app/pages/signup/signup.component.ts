@@ -16,16 +16,18 @@ export class SignupComponent implements OnInit {
     this.signupForm = this.setupForm();
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
+
 
   /** Initialize the Form model. */
   private setupForm(): FormGroup {
     // Build the Form properties with validators
     const group = this.fb.group({
-      firstName: [null, [Validators.required]],
-      lastName: [null, [Validators.required]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+      firstName: [ null, [Validators.required] ],
+      lastName: [ null, [Validators.required] ],
+      email: [ '', [Validators.required, Validators.email] ],
+      password: [ '', [Validators.required, Validators.minLength(8)] ],
     });
     return group;
   }

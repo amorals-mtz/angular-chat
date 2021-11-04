@@ -1,11 +1,12 @@
-<div class="container d-flex justify-content-center align-items-center">
+<app-navbar></app-navbar>
+<div class="container-wrapper container d-flex justify-content-center align-items-center">
   <div class="form-wrapper text-center">
 
-    <h2 class="text-center">Signup</h2>
+    <h2 class="text-center"> Sign Up </h2>
     <form [formGroup]="signupForm" novalidate
           (submit)="submit()">
-          <!-- The `novalidate` attribute in the <form> element prevents the browser
-                           from attempting native HTML validations. -->
+      <!-- The `novalidate` attribute in the <form> element prevents the browser
+           from attempting native HTML validations. -->
 
       <!-- First and Last Name -->
       <div class="name-wrapper d-flex">

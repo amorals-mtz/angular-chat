@@ -16,20 +16,22 @@ export class LoginComponent implements OnInit {
     this.loginForm = this.setupForm();
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+  }
+
 
   /** Initialize the Form model. */
   private setupForm(): FormGroup {
     // Build the Form properties with validators
     const group = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(8)]],
+      email: [ '', [Validators.required, Validators.email] ],
+      password: [ '', [Validators.required, Validators.minLength(8)] ],
     });
     return group;
   }
 
   submit(): void {
-    // TODO: call the Auth service
+    // TODO: Call the Auth service
     const { email, password }: any = this.loginForm.value;
     console.log(`Email: ${email}, Password: ${password}`);
   }
