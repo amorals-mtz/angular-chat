@@ -1,0 +1,28 @@
+@import 'src/styles/variables';
+
+.chat-message {
+  padding: 1.5em;
+
+  img {
+    margin-right: 1em;
+    height: 100px;
+    width: 100px;
+    // object-fit: cover;  // Overflow and hide the excess
+    // Don't use it since is not fully supported on IE
+    // Check compatibility at https://caniuse.com/
+  }
+
+  .name {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .timestamp {
+    margin-bottom: 1.5em;
+    color: darken($light-grey, 15%);
+  }
+
+  .message {
+    font-size: 1.2em;
+  }
+}

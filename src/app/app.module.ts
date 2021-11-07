@@ -12,9 +12,14 @@ import { AppRoutingModule } from './app-routing.module';
 /** Module Components/Directives/Pipes/Services */
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ChatComponent } from './pages/chat/chat.component';
+import { ChatInputComponent } from './pages/chat/components/chat-input/chat-input.component';
+import { ChatMessageComponent } from './pages/chat/components/chat-message/chat-message.component';
+import { ChatroomListComponent } from './pages/chat/components/chatroom-list/chatroom-list.component';
+import { ChatroomTitleBarComponent } from './pages/chat/components/chatroom-title-bar/chatroom-title-bar.component';
+import { ChatroomWindowComponent } from './pages/chat/components/chatroom-window/chatroom-window.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
-
 
 @NgModule({
   imports: [
@@ -29,6 +34,12 @@ import { SignupComponent } from './pages/signup/signup.component';
     NavbarComponent,
     LoginComponent,
     SignupComponent,
+    ChatComponent,
+    ChatInputComponent,
+    ChatMessageComponent,
+    ChatroomListComponent,
+    ChatroomTitleBarComponent,
+    ChatroomWindowComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,14 @@
+<div class="d-flex chat-message">
+  <img class="rounded-circle" [src]="message.sender.photoUrl">
+  <div class="d-flex flex-column bubble">
+    <div class="name">
+      {{ message?.sender?.firstName }} {{ message?.sender?.lastName }}
+    </div>
+    <small class="timestamp">
+      {{ message?.createdAt | date:'medium' }}
+    </small>
+    <div class="message">
+      {{ message?.message }}
+    </div>
+  </div>
+</div>
