@@ -16,10 +16,10 @@ export class ChatInputComponent implements OnInit {
   }
 
   submit(message: string): void {
-    // TODO: save text to Firebase Back-end
+    // TODO: Save text to Firebase Back-end
     console.log('New Message: ', message);
 
-    // rest input
+    // Reset input
     this.newMessageText = '';
   }
 

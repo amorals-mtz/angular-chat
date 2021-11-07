@@ -2,9 +2,11 @@
 
 .new-message-wrapper {
   .input-group {
-    align-self: flex-end;
+    align-self: flex-end;        // Float the input to the border
+                                 //  and stay sticky towards the bottom.
 
     .form-control {
+      // Overwrite the defaults from Bootstrap.
       border-radius: 0;
       border: 0;
       background-color: $light-grey;
